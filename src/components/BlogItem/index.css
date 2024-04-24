@@ -1,0 +1,77 @@
+/* Write your CSS code here */
+.each-blog-item {
+  list-style-type: none;
+  height: 20%;
+  width: 75vw;
+  border: 1px solid gray;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.img-container {
+  width: 30%;
+  height: 100%;
+  margin-right: 10px;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details-container {
+  width: 65%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.details-container p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e8e8e;
+}
+.details-container h1 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.profile-photo-container {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+.profile-photo-container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.profile-photo-container p {
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .each-blog-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .img-container {
+    width: 80%;
+  }
+  .profile-photo-container {
+    width: 60%;
+  }
+  .details-container h1 {
+    font-size: 12px;
+  }
+  .details-container p {
+    font-size: 9px;
+  }
+}
